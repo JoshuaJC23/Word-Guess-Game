@@ -1,16 +1,18 @@
 // create variable with array of nba teams
-var teams = ["LAKERS", "WARRIORS", "CELTICS", "RAPTORS", "CAVALIERS", "ROCKETS", "SPURS", "THUNDER", "BULLS", "KNICKS", "TIMBERWOLVES",
-            "76ERS", "BUCKS", "MAVERICKS", "HEAT", "BLAZERS", "PELICANS", "JAZZ", "SUNS", "CLIPPERS", "NUGGETS", "KINGS", "PACERS",
-            "NETS", "PISTONS", "WIZARDS", "HAWKS", "HORNETS", "HORNETS", "GRIZZLIES", "MAGIC"];
+var letters = ["Celtics", "Bulls", "Hawks", "Nets", "Cavaliers", "Hornets", "Knicks",
+                "Pistons", "Heat", "SeventySixers", "Pacers", "Magic", "Raptors", "Bucks",
+                "Wizards", "Nuggets", "Warriors", "Mavericks", "Timberwolves", "Thunder",
+                "Blazers", "Jazz", "Clippers", "Lakers", "Suns", "Kings", "Rockets", "Grizzlies",
+                "Pelicans", "Spurs"];
 
 // create variables
 var wins = 0;
 var losses = 0;
-var guessesRemaining = 10;
+var guessesRemaining = 15;
 var guessesSoFar = "";
 var computerChoice = "";
-var NumberofBlanks = 0;
-var lettersInWord = [];
+// var NumberofBlanks = 0;
+// var lettersInWord = [];
 for (var i = 0; i < computerChoice.length; i++){
         computerChoice.push("_");
 }
