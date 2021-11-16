@@ -1,5 +1,5 @@
 // create variable with array of nba teams
-var letters = ["Celtics", "Bulls", "Hawks", "Nets", "Cavaliers", "Hornets", "Knicks",
+var teams = ["Celtics", "Bulls", "Hawks", "Nets", "Cavaliers", "Hornets", "Knicks",
                 "Pistons", "Heat", "SeventySixers", "Pacers", "Magic", "Raptors", "Bucks",
                 "Wizards", "Nuggets", "Warriors", "Mavericks", "Timberwolves", "Thunder",
                 "Blazers", "Jazz", "Clippers", "Lakers", "Suns", "Kings", "Rockets", "Grizzlies",
@@ -10,37 +10,17 @@ var wins = 0;
 var losses = 0;
 var guessesRemaining = 15;
 var guessesSoFar = "";
-var computerChoice = "";
-// var NumberofBlanks = 0;
-// var lettersInWord = [];
-for (var i = 0; i < computerChoice.length; i++){
-        computerChoice.push("_");
-}
-document.getElementById("NumberofBlanks").innerHTML = "Number of Guesses Remaining" + lettersInWord;
-// var remainingLetter = getRandomTeam.length;
-console.log(computerChoice.push("_"))
+var currentWord;
+var NumberofBlanks = [];
+var lettersInWord = [];
+var team;
 
-// while (remainingLetter > 0){
-    
-// }
+// for(var i = 0; i < teams.length; i++) {
+//     console.log(teams[i]);
+// };
 
+var randNum = teams[Math.floor(Math.random() * teams.length)];
+console.log(randNum);
 
-// // create functions to run the variables.
-
-function getRandomTeam(){
-    computerChoice = teams[Math.floor(Math.random() * teams.length)];
-    console.log(computerChoice);
-    return computerChoice;
-};
-
-function calculateNumberofBlanks(){
-    NumberofBlanks = computerChoice;
-    console.log(NumberofBlanks);
-    return NumberofBlanks;
-
-};
-
-function getLettersInWord(){
-    lettersInWord = computerChoice.split("");
-
-}
+_teamName = document.getElementById("CurrentWord");
+_teamName.textContent = randNum.split("");
